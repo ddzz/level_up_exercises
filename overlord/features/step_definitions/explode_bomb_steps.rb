@@ -15,4 +15,5 @@ end
 
 Then(/^the bomb explodes$/) do
   expect(page).to have_selector(".bomb_exploded")
+  page.save_screenshot('screenshot.png')
 end
